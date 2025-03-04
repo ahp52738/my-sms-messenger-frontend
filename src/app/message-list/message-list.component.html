@@ -1,10 +1,15 @@
-<div class="message-list">
-  <h2>Message List</h2>
+<div>
+  <h2>Messages</h2>
+
+  <div>
+    <input type="text" [(ngModel)]="newMessage.to" placeholder="Recipient">
+    <input type="text" [(ngModel)]="newMessage.content" placeholder="Message">
+    <button (click)="sendMessage()">Send</button>
+  </div>
+
   <ul>
-    <li *ngFor="let message of messages">
-      <strong>To:</strong> {{ message.to }}<br />
-      <strong>Content:</strong> {{ message.content }}<br />
-      <strong>Sent At:</strong> {{ message.sentAt | date:'short' }}
+    <li *ngFor="let msg of messages">
+      <strong>{{ msg.to }}</strong>: {{ msg.content }}
     </li>
   </ul>
 </div>
