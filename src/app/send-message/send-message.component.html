@@ -1,0 +1,14 @@
+<div class="send-message-form">
+  <h2>Send a Message</h2>
+  <form (ngSubmit)="sendMessage()">
+    <div>
+      <label for="recipient">Recipient:</label>
+      <input id="recipient" [(ngModel)]="recipient" name="recipient" required />
+    </div>
+    <div>
+      <label for="messageContent">Message:</label>
+      <textarea id="messageContent" [(ngModel)]="messageContent" name="messageContent" required></textarea>
+    </div>
+    <button type="submit">Send</button>
+  </form>
+</div>

@@ -1,0 +1,32 @@
+.send-message-form {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.send-message-form div {
+  margin-bottom: 10px;
+}
+
+.send-message-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.send-message-form input,
+.send-message-form textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.send-message-form button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.send-message-form button:hover {
+  background-color: #0056b3;
+}
